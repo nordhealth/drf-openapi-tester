@@ -55,6 +55,16 @@ classifiers = [
 drf-yasg = ["drf-yasg", "setuptools"]
 drf-spectacular = ["drf-spectacular"]
 
+[dependency-groups]
+dev = [
+    "coverage[toml] >=6,<7",
+    "Faker",
+    "pre-commit",
+    "pylint",
+    "pytest",
+    "pytest-django",
+]
+
 [project.urls]
 Homepage = "https://github.com/snok/drf-openapi-tester"
 Documentation = "https://github.com/snok/drf-openapi-tester"
@@ -139,15 +149,4 @@ select = [
     "TCH",
     "W",
     "YTT",
-]
-
-[tool.rye]
-managed = true
-dev-dependencies = [
-    "coverage[toml] >=6,<7",
-    "Faker",
-    "pre-commit",
-    "pylint",
-    "pytest",
-    "pytest-django",
 ]
