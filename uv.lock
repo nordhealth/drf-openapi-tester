@@ -263,6 +263,8 @@ drf-yasg = [
 [package.dev-dependencies]
 dev = [
     { name = "coverage", extra = ["toml"] },
+    { name = "drf-spectacular" },
+    { name = "drf-yasg" },
     { name = "faker" },
     { name = "pre-commit" },
     { name = "pylint" },
@@ -288,6 +290,8 @@ provides-extras = ["drf-yasg", "drf-spectacular"]
 [package.metadata.requires-dev]
 dev = [
     { name = "coverage", extras = ["toml"], specifier = ">=6,<7" },
+    { name = "drf-spectacular" },
+    { name = "drf-yasg" },
     { name = "faker" },
     { name = "pre-commit" },
     { name = "pylint" },

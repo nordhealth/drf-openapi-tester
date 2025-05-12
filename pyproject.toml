@@ -56,6 +56,8 @@ drf-spectacular = ["drf-spectacular"]
 [dependency-groups]
 dev = [
     "coverage[toml] >=6,<7",
+    "drf-spectacular",
+    "drf-yasg",
     "Faker",
     "pre-commit",
     "pylint",
